@@ -26,7 +26,7 @@
     const localVideo = document.getElementById('localVideo');
     const remoteVideo = document.getElementById('remoteVideo');
 
-    let conn = new WebSocket(''wss://YOUR_RENDER_URL.onrender.com'');
+    let conn = new WebSocket('wss://YOUR_RENDER_URL.onrender.com');
     let name, connectedUser, yourConn, stream;
 
     conn.onmessage = msg => {
